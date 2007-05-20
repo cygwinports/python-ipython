@@ -1,0 +1,364 @@
+ipython
+------------------------------------------
+IPython is a free software project which tries to:
+* Provide an interactive shell superior to Python's default.
+* Serve as an embeddable, ready to use interpreter.
+* Offer a flexible framework which can be used as the base environment 
+  for other systems with Python as the underlying language.
+* Allow interactive testing of threaded graphical toolkits.
+
+Runtime requirements:
+  python-2.5.1-1
+
+Build requirements:
+  cygwin-1.5.24-2
+  cygport-0.3.1-1
+  python-2.5.1-1
+
+Canonical website:
+  http://ipython.scipy.org/moin/
+
+Canonical download:
+  http://ipython.scipy.org/dist/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ipython-0.8.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ipython-0.8.1-X.cygport all
+
+This will create:
+  /usr/src/ipython-0.8.1-X-src.tar.bz2
+  /usr/src/ipython-0.8.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/ipython
+  /usr/bin/irunner
+  /usr/bin/pycolor
+  /usr/lib/python2.5/site-packages/IPython/ColorANSI.py
+  /usr/lib/python2.5/site-packages/IPython/ColorANSI.pyc
+  /usr/lib/python2.5/site-packages/IPython/ColorANSI.pyo
+  /usr/lib/python2.5/site-packages/IPython/ConfigLoader.py
+  /usr/lib/python2.5/site-packages/IPython/ConfigLoader.pyc
+  /usr/lib/python2.5/site-packages/IPython/ConfigLoader.pyo
+  /usr/lib/python2.5/site-packages/IPython/CrashHandler.py
+  /usr/lib/python2.5/site-packages/IPython/CrashHandler.pyc
+  /usr/lib/python2.5/site-packages/IPython/CrashHandler.pyo
+  /usr/lib/python2.5/site-packages/IPython/DPyGetOpt.py
+  /usr/lib/python2.5/site-packages/IPython/DPyGetOpt.pyc
+  /usr/lib/python2.5/site-packages/IPython/DPyGetOpt.pyo
+  /usr/lib/python2.5/site-packages/IPython/Debugger.py
+  /usr/lib/python2.5/site-packages/IPython/Debugger.pyc
+  /usr/lib/python2.5/site-packages/IPython/Debugger.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/InterpreterExec.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/InterpreterExec.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/InterpreterExec.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/InterpreterPasteInput.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/InterpreterPasteInput.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/InterpreterPasteInput.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/PhysicalQInput.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/PhysicalQInput.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/PhysicalQInput.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/PhysicalQInteractive.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/PhysicalQInteractive.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/PhysicalQInteractive.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/__init__.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/__init__.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/__init__.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/astyle.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/astyle.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/astyle.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/clearcmd.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/clearcmd.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/clearcmd.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/envpersist.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/envpersist.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/envpersist.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ext_rehashdir.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ext_rehashdir.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ext_rehashdir.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ext_rescapture.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ext_rescapture.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ext_rescapture.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ibrowse.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ibrowse.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ibrowse.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/igrid.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/igrid.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/igrid.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipipe.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipipe.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipipe.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_completers.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_completers.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_completers.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_constants.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_constants.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_constants.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_defaults.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_defaults.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_defaults.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_exportdb.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_exportdb.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_exportdb.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_extutil.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_extutil.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_extutil.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_gnuglobal.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_gnuglobal.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_gnuglobal.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_p4.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_p4.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_p4.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_pydb.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_pydb.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_pydb.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_render.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_render.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_render.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_signals.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_signals.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_signals.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_stock_completers.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_stock_completers.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_stock_completers.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_system_conf.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_system_conf.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_system_conf.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_which.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_which.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ipy_which.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/jobctrl.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/jobctrl.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/jobctrl.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ledit.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ledit.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/ledit.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/numeric_formats.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/numeric_formats.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/numeric_formats.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/path.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/path.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/path.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/pickleshare.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/pickleshare.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/pickleshare.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/pspersistence.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/pspersistence.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/pspersistence.pyo
+  /usr/lib/python2.5/site-packages/IPython/Extensions/win32clip.py
+  /usr/lib/python2.5/site-packages/IPython/Extensions/win32clip.pyc
+  /usr/lib/python2.5/site-packages/IPython/Extensions/win32clip.pyo
+  /usr/lib/python2.5/site-packages/IPython/FakeModule.py
+  /usr/lib/python2.5/site-packages/IPython/FakeModule.pyc
+  /usr/lib/python2.5/site-packages/IPython/FakeModule.pyo
+  /usr/lib/python2.5/site-packages/IPython/Gnuplot2.py
+  /usr/lib/python2.5/site-packages/IPython/Gnuplot2.pyc
+  /usr/lib/python2.5/site-packages/IPython/Gnuplot2.pyo
+  /usr/lib/python2.5/site-packages/IPython/GnuplotInteractive.py
+  /usr/lib/python2.5/site-packages/IPython/GnuplotInteractive.pyc
+  /usr/lib/python2.5/site-packages/IPython/GnuplotInteractive.pyo
+  /usr/lib/python2.5/site-packages/IPython/GnuplotRuntime.py
+  /usr/lib/python2.5/site-packages/IPython/GnuplotRuntime.pyc
+  /usr/lib/python2.5/site-packages/IPython/GnuplotRuntime.pyo
+  /usr/lib/python2.5/site-packages/IPython/Itpl.py
+  /usr/lib/python2.5/site-packages/IPython/Itpl.pyc
+  /usr/lib/python2.5/site-packages/IPython/Itpl.pyo
+  /usr/lib/python2.5/site-packages/IPython/Logger.py
+  /usr/lib/python2.5/site-packages/IPython/Logger.pyc
+  /usr/lib/python2.5/site-packages/IPython/Logger.pyo
+  /usr/lib/python2.5/site-packages/IPython/Magic.py
+  /usr/lib/python2.5/site-packages/IPython/Magic.pyc
+  /usr/lib/python2.5/site-packages/IPython/Magic.pyo
+  /usr/lib/python2.5/site-packages/IPython/OInspect.py
+  /usr/lib/python2.5/site-packages/IPython/OInspect.pyc
+  /usr/lib/python2.5/site-packages/IPython/OInspect.pyo
+  /usr/lib/python2.5/site-packages/IPython/OutputTrap.py
+  /usr/lib/python2.5/site-packages/IPython/OutputTrap.pyc
+  /usr/lib/python2.5/site-packages/IPython/OutputTrap.pyo
+  /usr/lib/python2.5/site-packages/IPython/Prompts.py
+  /usr/lib/python2.5/site-packages/IPython/Prompts.pyc
+  /usr/lib/python2.5/site-packages/IPython/Prompts.pyo
+  /usr/lib/python2.5/site-packages/IPython/PyColorize.py
+  /usr/lib/python2.5/site-packages/IPython/PyColorize.pyc
+  /usr/lib/python2.5/site-packages/IPython/PyColorize.pyo
+  /usr/lib/python2.5/site-packages/IPython/Release.py
+  /usr/lib/python2.5/site-packages/IPython/Release.pyc
+  /usr/lib/python2.5/site-packages/IPython/Release.pyo
+  /usr/lib/python2.5/site-packages/IPython/Shell.py
+  /usr/lib/python2.5/site-packages/IPython/Shell.pyc
+  /usr/lib/python2.5/site-packages/IPython/Shell.pyo
+  /usr/lib/python2.5/site-packages/IPython/UserConfig/ipy_profile_sh.py
+  /usr/lib/python2.5/site-packages/IPython/UserConfig/ipy_profile_sh.pyc
+  /usr/lib/python2.5/site-packages/IPython/UserConfig/ipy_profile_sh.pyo
+  /usr/lib/python2.5/site-packages/IPython/UserConfig/ipy_user_conf.py
+  /usr/lib/python2.5/site-packages/IPython/UserConfig/ipy_user_conf.pyc
+  /usr/lib/python2.5/site-packages/IPython/UserConfig/ipy_user_conf.pyo
+  /usr/lib/python2.5/site-packages/IPython/UserConfig/ipythonrc
+  /usr/lib/python2.5/site-packages/IPython/UserConfig/ipythonrc-math
+  /usr/lib/python2.5/site-packages/IPython/UserConfig/ipythonrc-numeric
+  /usr/lib/python2.5/site-packages/IPython/UserConfig/ipythonrc-physics
+  /usr/lib/python2.5/site-packages/IPython/UserConfig/ipythonrc-pysh
+  /usr/lib/python2.5/site-packages/IPython/UserConfig/ipythonrc-scipy
+  /usr/lib/python2.5/site-packages/IPython/UserConfig/ipythonrc-tutorial
+  /usr/lib/python2.5/site-packages/IPython/__init__.py
+  /usr/lib/python2.5/site-packages/IPython/__init__.pyc
+  /usr/lib/python2.5/site-packages/IPython/__init__.pyo
+  /usr/lib/python2.5/site-packages/IPython/background_jobs.py
+  /usr/lib/python2.5/site-packages/IPython/background_jobs.pyc
+  /usr/lib/python2.5/site-packages/IPython/background_jobs.pyo
+  /usr/lib/python2.5/site-packages/IPython/completer.py
+  /usr/lib/python2.5/site-packages/IPython/completer.pyc
+  /usr/lib/python2.5/site-packages/IPython/completer.pyo
+  /usr/lib/python2.5/site-packages/IPython/deep_reload.py
+  /usr/lib/python2.5/site-packages/IPython/deep_reload.pyc
+  /usr/lib/python2.5/site-packages/IPython/deep_reload.pyo
+  /usr/lib/python2.5/site-packages/IPython/demo.py
+  /usr/lib/python2.5/site-packages/IPython/demo.pyc
+  /usr/lib/python2.5/site-packages/IPython/demo.pyo
+  /usr/lib/python2.5/site-packages/IPython/excolors.py
+  /usr/lib/python2.5/site-packages/IPython/excolors.pyc
+  /usr/lib/python2.5/site-packages/IPython/excolors.pyo
+  /usr/lib/python2.5/site-packages/IPython/external/__init__.py
+  /usr/lib/python2.5/site-packages/IPython/external/__init__.pyc
+  /usr/lib/python2.5/site-packages/IPython/external/__init__.pyo
+  /usr/lib/python2.5/site-packages/IPython/external/simplegeneric.py
+  /usr/lib/python2.5/site-packages/IPython/external/simplegeneric.pyc
+  /usr/lib/python2.5/site-packages/IPython/external/simplegeneric.pyo
+  /usr/lib/python2.5/site-packages/IPython/genutils.py
+  /usr/lib/python2.5/site-packages/IPython/genutils.pyc
+  /usr/lib/python2.5/site-packages/IPython/genutils.pyo
+  /usr/lib/python2.5/site-packages/IPython/hooks.py
+  /usr/lib/python2.5/site-packages/IPython/hooks.pyc
+  /usr/lib/python2.5/site-packages/IPython/hooks.pyo
+  /usr/lib/python2.5/site-packages/IPython/ipapi.py
+  /usr/lib/python2.5/site-packages/IPython/ipapi.pyc
+  /usr/lib/python2.5/site-packages/IPython/ipapi.pyo
+  /usr/lib/python2.5/site-packages/IPython/iplib.py
+  /usr/lib/python2.5/site-packages/IPython/iplib.pyc
+  /usr/lib/python2.5/site-packages/IPython/iplib.pyo
+  /usr/lib/python2.5/site-packages/IPython/ipmaker.py
+  /usr/lib/python2.5/site-packages/IPython/ipmaker.pyc
+  /usr/lib/python2.5/site-packages/IPython/ipmaker.pyo
+  /usr/lib/python2.5/site-packages/IPython/ipstruct.py
+  /usr/lib/python2.5/site-packages/IPython/ipstruct.pyc
+  /usr/lib/python2.5/site-packages/IPython/ipstruct.pyo
+  /usr/lib/python2.5/site-packages/IPython/irunner.py
+  /usr/lib/python2.5/site-packages/IPython/irunner.pyc
+  /usr/lib/python2.5/site-packages/IPython/irunner.pyo
+  /usr/lib/python2.5/site-packages/IPython/macro.py
+  /usr/lib/python2.5/site-packages/IPython/macro.pyc
+  /usr/lib/python2.5/site-packages/IPython/macro.pyo
+  /usr/lib/python2.5/site-packages/IPython/numutils.py
+  /usr/lib/python2.5/site-packages/IPython/numutils.pyc
+  /usr/lib/python2.5/site-packages/IPython/numutils.pyo
+  /usr/lib/python2.5/site-packages/IPython/platutils.py
+  /usr/lib/python2.5/site-packages/IPython/platutils.pyc
+  /usr/lib/python2.5/site-packages/IPython/platutils.pyo
+  /usr/lib/python2.5/site-packages/IPython/platutils_dummy.py
+  /usr/lib/python2.5/site-packages/IPython/platutils_dummy.pyc
+  /usr/lib/python2.5/site-packages/IPython/platutils_dummy.pyo
+  /usr/lib/python2.5/site-packages/IPython/platutils_posix.py
+  /usr/lib/python2.5/site-packages/IPython/platutils_posix.pyc
+  /usr/lib/python2.5/site-packages/IPython/platutils_posix.pyo
+  /usr/lib/python2.5/site-packages/IPython/platutils_win32.py
+  /usr/lib/python2.5/site-packages/IPython/platutils_win32.pyc
+  /usr/lib/python2.5/site-packages/IPython/platutils_win32.pyo
+  /usr/lib/python2.5/site-packages/IPython/rlineimpl.py
+  /usr/lib/python2.5/site-packages/IPython/rlineimpl.pyc
+  /usr/lib/python2.5/site-packages/IPython/rlineimpl.pyo
+  /usr/lib/python2.5/site-packages/IPython/strdispatch.py
+  /usr/lib/python2.5/site-packages/IPython/strdispatch.pyc
+  /usr/lib/python2.5/site-packages/IPython/strdispatch.pyo
+  /usr/lib/python2.5/site-packages/IPython/ultraTB.py
+  /usr/lib/python2.5/site-packages/IPython/ultraTB.pyc
+  /usr/lib/python2.5/site-packages/IPython/ultraTB.pyo
+  /usr/lib/python2.5/site-packages/IPython/upgrade_dir.py
+  /usr/lib/python2.5/site-packages/IPython/upgrade_dir.pyc
+  /usr/lib/python2.5/site-packages/IPython/upgrade_dir.pyo
+  /usr/lib/python2.5/site-packages/IPython/usage.py
+  /usr/lib/python2.5/site-packages/IPython/usage.pyc
+  /usr/lib/python2.5/site-packages/IPython/usage.pyo
+  /usr/lib/python2.5/site-packages/IPython/wildcard.py
+  /usr/lib/python2.5/site-packages/IPython/wildcard.pyc
+  /usr/lib/python2.5/site-packages/IPython/wildcard.pyo
+  /usr/lib/python2.5/site-packages/IPython/winconsole.py
+  /usr/lib/python2.5/site-packages/IPython/winconsole.pyc
+  /usr/lib/python2.5/site-packages/IPython/winconsole.pyo
+  /usr/lib/python2.5/site-packages/ipython-0.8.1-py2.5.egg-info
+  /usr/share/doc/Cygwin/ipython-0.8.1.README
+  /usr/share/doc/ipython-0.8.1/COPYING
+  /usr/share/doc/ipython-0.8.1/ChangeLog
+  /usr/share/doc/ipython-0.8.1/NEWS
+  /usr/share/doc/ipython-0.8.1/README
+  /usr/share/doc/ipython-0.8.1/README.txt
+  /usr/share/doc/ipython-0.8.1/README_Windows.txt
+  /usr/share/doc/ipython-0.8.1/build_doc_instruction.txt
+  /usr/share/doc/ipython-0.8.1/examples/example-demo.py
+  /usr/share/doc/ipython-0.8.1/examples/example-embed-short.py
+  /usr/share/doc/ipython-0.8.1/examples/example-embed.py
+  /usr/share/doc/ipython-0.8.1/examples/example-gnuplot.py
+  /usr/share/doc/ipython-0.8.1/examples/seteditor.py
+  /usr/share/doc/ipython-0.8.1/ipython.el
+  /usr/share/doc/ipython-0.8.1/manual.pdf
+  /usr/share/doc/ipython-0.8.1/manual/footnode.html
+  /usr/share/doc/ipython-0.8.1/manual/img1.png
+  /usr/share/doc/ipython-0.8.1/manual/img2.png
+  /usr/share/doc/ipython-0.8.1/manual/img3.png
+  /usr/share/doc/ipython-0.8.1/manual/img4.png
+  /usr/share/doc/ipython-0.8.1/manual/img5.png
+  /usr/share/doc/ipython-0.8.1/manual/img6.png
+  /usr/share/doc/ipython-0.8.1/manual/index.html
+  /usr/share/doc/ipython-0.8.1/manual/manual.css
+  /usr/share/doc/ipython-0.8.1/manual/manual.html
+  /usr/share/doc/ipython-0.8.1/manual/next.png
+  /usr/share/doc/ipython-0.8.1/manual/next_g.png
+  /usr/share/doc/ipython-0.8.1/manual/node1.html
+  /usr/share/doc/ipython-0.8.1/manual/node10.html
+  /usr/share/doc/ipython-0.8.1/manual/node11.html
+  /usr/share/doc/ipython-0.8.1/manual/node12.html
+  /usr/share/doc/ipython-0.8.1/manual/node13.html
+  /usr/share/doc/ipython-0.8.1/manual/node14.html
+  /usr/share/doc/ipython-0.8.1/manual/node15.html
+  /usr/share/doc/ipython-0.8.1/manual/node16.html
+  /usr/share/doc/ipython-0.8.1/manual/node17.html
+  /usr/share/doc/ipython-0.8.1/manual/node18.html
+  /usr/share/doc/ipython-0.8.1/manual/node19.html
+  /usr/share/doc/ipython-0.8.1/manual/node2.html
+  /usr/share/doc/ipython-0.8.1/manual/node20.html
+  /usr/share/doc/ipython-0.8.1/manual/node3.html
+  /usr/share/doc/ipython-0.8.1/manual/node4.html
+  /usr/share/doc/ipython-0.8.1/manual/node5.html
+  /usr/share/doc/ipython-0.8.1/manual/node6.html
+  /usr/share/doc/ipython-0.8.1/manual/node7.html
+  /usr/share/doc/ipython-0.8.1/manual/node8.html
+  /usr/share/doc/ipython-0.8.1/manual/node9.html
+  /usr/share/doc/ipython-0.8.1/manual/prev.png
+  /usr/share/doc/ipython-0.8.1/manual/prev_g.png
+  /usr/share/doc/ipython-0.8.1/manual/up.png
+  /usr/share/doc/ipython-0.8.1/manual/up_g.png
+  /usr/share/doc/ipython-0.8.1/nbexample.py
+  /usr/share/doc/ipython-0.8.1/nbexample_latex.py
+  /usr/share/doc/ipython-0.8.1/nbexample_output.py
+  /usr/share/doc/ipython-0.8.1/new_design.pdf
+  /usr/share/doc/ipython-0.8.1/pycon.ico
+  /usr/share/doc/ipython-0.8.1/update_manual.py
+  /usr/share/man/man1/ipython.1.gz
+  /usr/share/man/man1/pycolor.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.8.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
