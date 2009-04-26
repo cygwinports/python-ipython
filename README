@@ -8,16 +8,16 @@ IPython is a free software project which tries to:
 * Allow interactive testing of threaded graphical toolkits.
 
 Runtime requirements:
-  python-2.5.2-3
-  python-openssl-0.7-1
-  python-pexpect-2.3-1
-  python-wx2.8-2.8.8.0-1  (optional)
-  python-zope-interface-3.4.1-1
+  python-2.5.4-10
+  python-openssl-0.8-10
+  python-pexpect-2.3-10
+  python-wx2.8-2.8.9.2-10  (optional)
+  python-zope.interface-3.5.0-1
 
 Build requirements:
-  cygwin-1.5.25-15
-  cygport-0.4.0-1
-  python-2.5.2-3
+  cygwin-1.7.0-45
+  cygport-0.9.6-1
+  python-2.5.4-10
 
 Canonical website:
   http://ipython.scipy.org/moin/
@@ -816,7 +816,7 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/IPython/winconsole.pyc
   /usr/lib/python2.5/site-packages/IPython/winconsole.pyo
   /usr/lib/python2.5/site-packages/ipython-0.9.1-py2.5.egg-info
-  /usr/share/doc/ipython-0.9.1/README.txt
+  /usr/share/doc/ipython/README.txt
   /usr/share/doc/ipython/examples/core/demo_colors_blink.py
   /usr/share/doc/ipython/examples/core/embtest.py
   /usr/share/doc/ipython/examples/core/example-demo.py
@@ -945,14 +945,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.9.1-1 -----
-Version bump.
-
------ version 0.8.2-1 -----
-Version bump.
-
------ version 0.8.1-1 -----
-Initial release for Cygwin.
+----- version 0.9.1-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
