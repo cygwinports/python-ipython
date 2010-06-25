@@ -1,5 +1,5 @@
 category: Python Interpreters
-requires: python python-foolscap python-openssl python-pexpect python-zope.interface
+requires: python python-foolscap python-libopenssl098 python-pexpect python-zope.interface
 sdesc: "Interactive Python interpreter"
 ldesc: "IPython is a free software project which tries to:
 * Provide an interactive shell superior to Python's default.
