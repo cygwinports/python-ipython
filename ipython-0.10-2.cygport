@@ -1,5 +1,0 @@
-inherit distutils
-
-DESCRIPTION="Interactive Python interpreter"
-HOMEPAGE="http://ipython.scipy.org/"
-SRC_URI="http://ipython.scipy.org/dist/${PV}/${P}.tar.gz"
