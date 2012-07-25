@@ -1,6 +1,0 @@
-inherit distutils
-
-DESCRIPTION="Interactive Python interpreter"
-HOMEPAGE="http://ipython.org/"
-
-DOCS="docs/README.txt docs/api_changes.txt"
