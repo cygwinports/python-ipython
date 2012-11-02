@@ -1,5 +1,8 @@
 inherit distutils
 
+NAME="python-ipython"
+VERSION=0.13.1
+RELEASE=1
 CATEGORY="Python"
 SUMMARY="Interactive Python interpreter"
 DESCRIPTION="IPython is a free software project which tries to:
