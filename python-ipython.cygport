@@ -1,8 +1,8 @@
-inherit distutils
+inherit python-wheel
 
 NAME="python-ipython"
-VERSION=0.13.1
-RELEASE=2
+VERSION=4.2.1
+RELEASE=1
 CATEGORY="Python"
 SUMMARY="Interactive Python interpreter"
 DESCRIPTION="IPython is a free software project which tries to:
@@ -13,4 +13,34 @@ DESCRIPTION="IPython is a free software project which tries to:
 * Allow interactive testing of threaded graphical toolkits."
 HOMEPAGE="http://ipython.org/"
 
-DOCS="docs/README.txt docs/api_changes.txt"
+ARCH=noarch
+
+python2_ipython_CONTENTS="
+	usr/bin/iptest
+	usr/bin/iptest2
+	usr/bin/ipython
+	usr/bin/ipython2
+	${PYTHON2_SITELIB#/}
+	usr/share/doc/python2-ipython/
+	usr/share/man/man1/ipython2.*
+"
+python3_ipython_CONTENTS="
+	usr/bin/iptest3
+	usr/bin/ipython3
+	${PYTHON3_SITELIB#/}
+	usr/share/doc/python3-ipython/
+	usr/share/man/man1/ipython3.*
+"
+
+REQUIRES_EXCLUDE_FROM="${PYTHON2_SITELIB}/IPython/lib/inputhookglut.py:${PYTHON2_SITELIB}/IPython/lib/inputhookgtk.py:${PYTHON2_SITELIB}/IPython/lib/inputhookgtk3.py:${PYTHON2_SITELIB}/IPython/lib/inputhookwx.py:${PYTHON2_SITELIB}/IPython/sphinxext/ipython_console_highlighting.py:${PYTHON3_SITELIB}/IPython/lib/inputhookglut.py:${PYTHON3_SITELIB}/IPython/lib/inputhookgtk.py:${PYTHON3_SITELIB}/IPython/lib/inputhookgtk3.py:${PYTHON3_SITELIB}/IPython/lib/inputhookwx.py:${PYTHON3_SITELIB}/IPython/sphinxext/ipython_console_highlighting.py"
+
+src_install() {
+	cd ${B}
+	python_wheel_install
+
+	cp ${D}/usr/bin/iptest{2,}
+	cp ${D}/usr/bin/ipython{2,}
+
+	cp ${D}/usr/share/man/man1/ipython{,2}.1
+	mv ${D}/usr/share/man/man1/ipython{,3}.1
+}
