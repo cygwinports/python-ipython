@@ -1,7 +1,7 @@
 inherit python-wheel
 
 NAME="python-ipython"
-VERSION=4.2.1
+VERSION=5.8.0
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Interactive Python interpreter"
@@ -15,32 +15,39 @@ HOMEPAGE="http://ipython.org/"
 
 ARCH=noarch
 
-python2_ipython_CONTENTS="
-	usr/bin/iptest
-	usr/bin/iptest2
-	usr/bin/ipython
-	usr/bin/ipython2
-	${PYTHON2_SITELIB#/}
-	usr/share/doc/python2-ipython/
-	usr/share/man/man1/ipython2.*
+python27_ipython_REQUIRES="python27-pathlib2"
+python27_ipython_CONTENTS+="
+	usr/bin/iptest2.7
+	usr/bin/ipython2.7
+	usr/share/man/man1/ipython2.7*
 "
-python3_ipython_CONTENTS="
-	usr/bin/iptest3
-	usr/bin/ipython3
-	${PYTHON3_SITELIB#/}
-	usr/share/doc/python3-ipython/
-	usr/share/man/man1/ipython3.*
+python36_ipython_CONTENTS+="
+	usr/bin/iptest3.6
+	usr/bin/ipython3.6
+	usr/share/man/man1/ipython3.6.*
+"
+python37_ipython_CONTENTS+="
+	usr/bin/iptest3.7
+	usr/bin/ipython3.7
+	usr/share/man/man1/ipython3.7.*
 "
 
-REQUIRES_EXCLUDE_FROM="${PYTHON2_SITELIB}/IPython/lib/inputhookglut.py:${PYTHON2_SITELIB}/IPython/lib/inputhookgtk.py:${PYTHON2_SITELIB}/IPython/lib/inputhookgtk3.py:${PYTHON2_SITELIB}/IPython/lib/inputhookwx.py:${PYTHON2_SITELIB}/IPython/sphinxext/ipython_console_highlighting.py:${PYTHON3_SITELIB}/IPython/lib/inputhookglut.py:${PYTHON3_SITELIB}/IPython/lib/inputhookgtk.py:${PYTHON3_SITELIB}/IPython/lib/inputhookgtk3.py:${PYTHON3_SITELIB}/IPython/lib/inputhookwx.py:${PYTHON3_SITELIB}/IPython/sphinxext/ipython_console_highlighting.py"
+REQUIRES_EXCLUDE_FROM="*/inputhookglut.py:*/inputhookgtk*.py:*/inputhookwx.py:*/ipython_console_highlighting.py:*/pt_inputhooks/*"
 
 src_install() {
 	cd ${B}
 	python_wheel_install
 
-	cp ${D}/usr/bin/iptest{2,}
-	cp ${D}/usr/bin/ipython{2,}
+	pushd ${D}/usr/bin
+	for v in ${PYTHON_WHEEL_VERSIONS//:/ }
+	do
+		for x in iptest ipython
+		do
+			cp ${x}${v%.*} ${x}${v}
+			sed -i -e "1s/${v%.*}\.[0-9]*/${v}/g" ${x}${v}
+		done
+		cp ${D}/usr/share/man/man1/ipython{,${v}}.1
+	done
 
-	cp ${D}/usr/share/man/man1/ipython{,2}.1
-	mv ${D}/usr/share/man/man1/ipython{,3}.1
+	rm ${D}/usr/bin/ip{test,ython}{,2,3} ${D}/usr/share/man/man1/ipython.1
 }
